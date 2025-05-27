@@ -1,8 +1,9 @@
 # EX.NO.09        A project on Time series analysis on weather forecasting using ARIMA model 
-
+```
 Devloped by: Keerthana P
 Register Number: 212223240069
 Date: 27-05-2025
+```
 
 ### AIM:
 To Create a project on Time series analysis on weather forecasting using ARIMA model in  Python and compare with other models.
@@ -20,29 +21,29 @@ To Create a project on Time series analysis on weather forecasting using ARIMA m
 ### PROGRAM:
 
 Import the neccessary packages
-
+```
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from statsmodels.tsa.arima.model import ARIMA
 from sklearn.metrics import mean_squared_error
-
+```
 
 Load the dataset
-
+```
 data = pd.read_csv("/content/seattle-weather.csv")
-
+```
 
 Convert 'Date' column to datetime format
-
+```
 data['date'] = pd.to_datetime(data['date'])
-
+```
 Set 'Date' column as index
-
+```
 data.set_index('date', inplace=True)
-
+```
 Arima Model
-
+```
 def arima_model(data, target_variable, order):
     train_size = int(len(data) * 0.8)
     train_data, test_data = data[:train_size], data[train_size:]
@@ -68,7 +69,7 @@ def arima_model(data, target_variable, order):
 
 arima_model(data, 'temp_max', order=(1,2,1))
 
-
+```
 
 
 ### OUTPUT:
