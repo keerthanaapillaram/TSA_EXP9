@@ -74,7 +74,8 @@ arima_model(data, 'temp_max', order=(1,2,1))
 
 ### OUTPUT:
 
-![image](https://github.com/user-attachments/assets/d4a45ea0-a247-4987-a169-0200aa2d6ce9)
+![Screenshot 2025-05-27 081444](https://github.com/user-attachments/assets/153103dc-2a6f-4253-8a94-f97383bf75de)
+
 
 ### RESULT:
 Thus the program run successfully based on the ARIMA model using python.
